@@ -11103,13 +11103,17 @@ var HashLink = exports.HashLink = function (_React$Component) {
   _createClass(HashLink, [{
     key: 'scroll',
     value: function scroll() {
+      var _this2 = this;
+
       var element = document.getElementById(this.hashValue);
 
       if (!element) {
         return;
       }
 
-      element.scrollIntoView(this.scrollOptions);
+      setTimeout(function () {
+        element.scrollIntoView(_this2.scrollOptions);
+      }, this.props.delay);
 
       // if scrolled, dispose timer and observer
       this.dispose();
@@ -11132,30 +11136,26 @@ var HashLink = exports.HashLink = function (_React$Component) {
   }, {
     key: 'onClick',
     value: function onClick(e) {
-      var _this2 = this;
-
       this.props.onClick(e);
 
       if (this.hashValue.length === 0) {
         return;
       }
 
-      setTimeout(function () {
-        _this2.scroll();
+      this.scroll();
 
-        if (_this2.isDisposed) {
-          return;
-        }
+      if (this.isDisposed) {
+        return;
+      }
 
-        _this2.observer = new MutationObserver(_this2.scroll);
-        _this2.observer.observe(document, {
-          attributes: true,
-          childList: true,
-          subtree: true
-        });
+      this.observer = new MutationObserver(this.scroll);
+      this.observer.observe(document, {
+        attributes: true,
+        childList: true,
+        subtree: true
+      });
 
-        _this2.observeTimerId = setTimeout(_this2.dispose, 5000);
-      }, this.props.delay);
+      this.observeTimerId = setTimeout(this.dispose, 5000);
     }
   }, {
     key: 'render',
