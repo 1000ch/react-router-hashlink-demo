@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import * as PropTypes from 'prop-types';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import { HashLink } from 'react-router-hashlink';
 import { override } from 'smoothscroll-polyfill';
 
@@ -37,7 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   ReactDOM.render(
     <BrowserRouter>
-      <Route exact path="/" component={Index} />
+      <Switch>
+        <Route exact path="/" component={Index} />
+        <Route exact path="/react-router-hashlink-demo/" component={Index} />
+      </Switch>
     </BrowserRouter>,
     document.getElementById('app')
   );
