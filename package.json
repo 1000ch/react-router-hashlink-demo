@@ -1,0 +1,25 @@
+{
+  "name": "react-router-hashlink-demo",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack && postcss --use cssnano --output dist/app.css src/app.css"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1",
+    "react-router-hashlink": "^0.3.2",
+    "smoothscroll-polyfill": "git+https://github.com/1000ch/smoothscroll.git"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.0.0",
+    "babel-preset-react": "^6.24.1",
+    "cssnano": "^3.10.0",
+    "postcss-cli": "^4.1.0",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
