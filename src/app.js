@@ -9,23 +9,41 @@ class Index extends React.Component {
   render() {
     return (
       <main>
+        <section id="top">
+          <h1>
+            <a href="https://github.com/1000ch/react-router-hashlink">react-router-hashlink</a>
+          </h1>
+          <p>Scroll behavior in this demo is configured by <a href="https://drafts.csswg.org/cssom-view/#dom-element-scrollintoview"><code>scrollIntoView()</code></a> via <code>&lt;HashLink&gt;</code>.</p>
+          <p><a href="http://iamdustan.com/smoothscroll/">smoothscroll</a> polyfill for <code>scrollIntoView()</code> is awesome, and there is also <a href="https://github.com/1000ch/smoothscroll">forked one</a> to override current browser implementation.</p>
+          <ul>
+            <li><HashLink to="#1" behavior="smooth">#1</HashLink></li>
+            <li><HashLink to="#2" behavior="smooth">#2</HashLink></li>
+            <li><HashLink to="#3" behavior="smooth">#3</HashLink></li>
+          </ul>
+        </section>
         <section id="1">
           <h1>#1</h1>
-          <HashLink to="#1" behavior="smooth">#1</HashLink>
-          <HashLink to="#2" behavior="smooth">#2</HashLink>
-          <HashLink to="#3" behavior="smooth">#3</HashLink>
+          <ul>
+            <li><HashLink to="#top" behavior="smooth">#top</HashLink></li>
+            <li><HashLink to="#2" behavior="smooth">#2</HashLink></li>
+            <li><HashLink to="#3" behavior="smooth">#3</HashLink></li>
+          </ul>
         </section>
         <section id="2">
           <h1>#2</h1>
-          <HashLink to="#1" behavior="smooth">#1</HashLink>
-          <HashLink to="#2" behavior="smooth">#2</HashLink>
-          <HashLink to="#3" behavior="smooth">#3</HashLink>
+          <ul>
+            <li><HashLink to="#top" behavior="smooth">#top</HashLink></li>
+            <li><HashLink to="#1" behavior="smooth">#1</HashLink></li>
+            <li><HashLink to="#3" behavior="smooth">#3</HashLink></li>
+          </ul>
         </section>
         <section id="3">
           <h1>#3</h1>
-          <HashLink to="#1" behavior="smooth">#1</HashLink>
-          <HashLink to="#2" behavior="smooth">#2</HashLink>
-          <HashLink to="#3" behavior="smooth">#3</HashLink>
+          <ul>
+            <li><HashLink to="#top" behavior="smooth">#top</HashLink></li>
+            <li><HashLink to="#1" behavior="smooth">#1</HashLink></li>
+            <li><HashLink to="#2" behavior="smooth">#2</HashLink></li>
+          </ul>
         </section>
       </main>
     );

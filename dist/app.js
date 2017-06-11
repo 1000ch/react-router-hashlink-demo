@@ -25832,6 +25832,93 @@ class Index extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
       null,
       __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
         'section',
+        { id: 'top' },
+        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+          'h1',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'a',
+            { href: 'https://github.com/1000ch/react-router-hashlink' },
+            'react-router-hashlink'
+          )
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+          'p',
+          null,
+          'Scroll behavior in this demo is configured by ',
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'a',
+            { href: 'https://drafts.csswg.org/cssom-view/#dom-element-scrollintoview' },
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              'code',
+              null,
+              'scrollIntoView()'
+            )
+          ),
+          ' via ',
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'code',
+            null,
+            '<HashLink>'
+          ),
+          '.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+          'p',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'a',
+            { href: 'http://iamdustan.com/smoothscroll/' },
+            'smoothscroll'
+          ),
+          ' polyfill for ',
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'code',
+            null,
+            'scrollIntoView()'
+          ),
+          ' is awesome, and there is also ',
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'a',
+            { href: 'https://github.com/1000ch/smoothscroll' },
+            'forked one'
+          ),
+          ' to override current browser implementation.'
+        ),
+        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+          'ul',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#1', behavior: 'smooth' },
+              '#1'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#2', behavior: 'smooth' },
+              '#2'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#3', behavior: 'smooth' },
+              '#3'
+            )
+          )
+        )
+      ),
+      __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+        'section',
         { id: '1' },
         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
           'h1',
@@ -25839,19 +25926,35 @@ class Index extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           '#1'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#1', behavior: 'smooth' },
-          '#1'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#2', behavior: 'smooth' },
-          '#2'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#3', behavior: 'smooth' },
-          '#3'
+          'ul',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#top', behavior: 'smooth' },
+              '#top'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#2', behavior: 'smooth' },
+              '#2'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#3', behavior: 'smooth' },
+              '#3'
+            )
+          )
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
@@ -25863,19 +25966,35 @@ class Index extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           '#2'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#1', behavior: 'smooth' },
-          '#1'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#2', behavior: 'smooth' },
-          '#2'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#3', behavior: 'smooth' },
-          '#3'
+          'ul',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#top', behavior: 'smooth' },
+              '#top'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#1', behavior: 'smooth' },
+              '#1'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#3', behavior: 'smooth' },
+              '#3'
+            )
+          )
         )
       ),
       __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
@@ -25887,19 +26006,35 @@ class Index extends __WEBPACK_IMPORTED_MODULE_0_react__["Component"] {
           '#3'
         ),
         __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#1', behavior: 'smooth' },
-          '#1'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#2', behavior: 'smooth' },
-          '#2'
-        ),
-        __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
-          __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
-          { to: '#3', behavior: 'smooth' },
-          '#3'
+          'ul',
+          null,
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#top', behavior: 'smooth' },
+              '#top'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#1', behavior: 'smooth' },
+              '#1'
+            )
+          ),
+          __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+            'li',
+            null,
+            __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](
+              __WEBPACK_IMPORTED_MODULE_4_react_router_hashlink__["HashLink"],
+              { to: '#2', behavior: 'smooth' },
+              '#2'
+            )
+          )
         )
       )
     );
